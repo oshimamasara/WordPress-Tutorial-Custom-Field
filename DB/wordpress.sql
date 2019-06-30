@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: db
--- 生成日時: 2019 年 6 月 30 日 15:44
+-- 生成日時: 2019 年 6 月 30 日 16:28
 -- サーバのバージョン： 5.7.26
 -- PHP のバージョン: 7.2.19
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=191 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- テーブルのデータのダンプ `wp_options`
@@ -235,7 +235,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (110, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (112, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(113, '_transient_doing_cron', '1561909355.6658220291137695312500', 'yes'),
+(113, '_transient_doing_cron', '1561912012.6678678989410400390625', 'yes'),
 (114, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:62:\"https://downloads.wordpress.org/release/ja/wordpress-5.2.2.zip\";s:6:\"locale\";s:2:\"ja\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:62:\"https://downloads.wordpress.org/release/ja/wordpress-5.2.2.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.2\";s:7:\"version\";s:5:\"5.2.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1561907453;s:15:\"version_checked\";s:5:\"5.2.2\";s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:4:\"core\";s:4:\"slug\";s:7:\"default\";s:8:\"language\";s:2:\"ja\";s:7:\"version\";s:5:\"5.2.2\";s:7:\"updated\";s:19:\"2019-06-18 06:50:11\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/translation/core/5.2.2/ja.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
 (115, '_site_transient_update_plugins', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1561907453;s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.2\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
 (118, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1561907456;s:7:\"checked\";a:1:{s:6:\"xclean\";s:5:\"1.0.7\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
@@ -304,7 +304,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=138 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=164 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- テーブルのデータのダンプ `wp_postmeta`
@@ -326,13 +326,13 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (13, 8, '_wp_trash_meta_status', 'publish'),
 (14, 8, '_wp_trash_meta_time', '1561730991'),
 (15, 9, '_edit_lock', '1561730907:1'),
-(16, 10, '_edit_lock', '1561907626:1'),
+(16, 10, '_edit_lock', '1561912072:1'),
 (29, 10, '_encloseme', '1'),
-(31, 18, '_edit_lock', '1561907638:1'),
+(31, 18, '_edit_lock', '1561911585:1'),
 (32, 18, '_encloseme', '1'),
-(34, 20, '_edit_lock', '1561907646:1'),
+(34, 20, '_edit_lock', '1561911530:1'),
 (35, 20, '_encloseme', '1'),
-(37, 22, '_edit_lock', '1561909355:1'),
+(37, 22, '_edit_lock', '1561910297:1'),
 (38, 22, '_encloseme', '1'),
 (41, 10, '_encloseme', '1'),
 (42, 10, '_edit_last', '1'),
@@ -410,7 +410,31 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (134, 49, '_wp_trash_meta_time', '1561908874'),
 (135, 50, '_edit_lock', '1561909058:1'),
 (136, 50, '_wp_trash_meta_status', 'publish'),
-(137, 50, '_wp_trash_meta_time', '1561909070');
+(137, 50, '_wp_trash_meta_time', '1561909070'),
+(138, 22, 'Price', '100'),
+(139, 22, 'Allergy', '卵、小麦粉、バナナ'),
+(140, 22, '_encloseme', '1'),
+(141, 22, '_edit_last', '1'),
+(142, 22, '_encloseme', '1'),
+(143, 22, '_encloseme', '1'),
+(146, 20, '_encloseme', '1'),
+(147, 20, '_encloseme', '1'),
+(148, 20, '_encloseme', '1'),
+(149, 20, '_encloseme', '1'),
+(150, 20, '_encloseme', '1'),
+(151, 20, '_encloseme', '1'),
+(152, 20, 'Price', '180'),
+(153, 20, '_encloseme', '1'),
+(154, 20, 'Allergy', '卵、小麦粉'),
+(155, 20, '_encloseme', '1'),
+(156, 18, 'Price', '150'),
+(157, 18, '_encloseme', '1'),
+(158, 18, 'Allergy', '卵、小麦粉'),
+(159, 18, '_encloseme', '1'),
+(160, 10, 'Price', '150'),
+(161, 10, '_encloseme', '1'),
+(162, 10, 'Allergy', '卵、小麦粉、バナナ'),
+(163, 10, '_encloseme', '1');
 
 -- --------------------------------------------------------
 
@@ -464,13 +488,13 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (7, 1, '2019-06-28 23:06:16', '2019-06-28 14:06:16', '<!-- wp:paragraph -->\n<p>これはサンプルページです。同じ位置に固定され、(多くのテーマでは) サイトナビゲーションメニューに含まれる点がブログ投稿とは異なります。まずは、サイト訪問者に対して自分のことを説明する自己紹介ページを作成するのが一般的です。たとえば以下のようなものです。</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>はじめまして。昼間はバイク便のメッセンジャーとして働いていますが、俳優志望でもあります。これは僕のサイトです。ロサンゼルスに住み、ジャックという名前のかわいい犬を飼っています。好きなものはピニャコラーダ、そして通り雨に濡れること。</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>または、このようなものです。</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>XYZ 小道具株式会社は1971年の創立以来、高品質の小道具を皆様にご提供させていただいています。ゴッサム・シティに所在する当社では2,000名以上の社員が働いており、様々な形で地域のコミュニティへ貢献しています。</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>新しく WordPress ユーザーになった方は、<a href=\"http://localhost:8080/wp-admin/\">ダッシュボード</a>へ行ってこのページを削除し、独自のコンテンツを含む新しいページを作成してください。それでは、お楽しみください !</p>\n<!-- /wp:paragraph -->', 'サンプルページ', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2019-06-28 23:06:16', '2019-06-28 14:06:16', '', 2, 'http://localhost:8080/?p=7', 0, 'revision', '', 0),
 (8, 1, '2019-06-28 23:09:51', '2019-06-28 14:09:51', '{\n    \"blogdescription\": {\n        \"value\": \"\",\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-06-28 14:09:51\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '68a95a9b-908a-40ea-8b9e-cd9d2d4ea2d6', '', '', '2019-06-28 23:09:51', '2019-06-28 14:09:51', '', 0, 'http://localhost:8080/68a95a9b-908a-40ea-8b9e-cd9d2d4ea2d6/', 0, 'customize_changeset', '', 0),
 (9, 1, '2019-06-28 23:10:43', '0000-00-00 00:00:00', '', '自動下書き', '', 'auto-draft', 'open', 'open', '', '', '', '', '2019-06-28 23:10:43', '0000-00-00 00:00:00', '', 0, 'http://localhost:8080/?p=9', 0, 'post', '', 0),
-(10, 1, '2019-06-28 23:11:51', '2019-06-28 14:11:51', '<!-- wp:paragraph -->\n<p>南国のバナナフレーバー、たまりません</p>\n<!-- /wp:paragraph -->', 'バナナドーナツ', '', 'publish', 'open', 'open', '', '%e3%83%90%e3%83%8a%e3%83%8a%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 00:16:06', '2019-06-30 15:16:06', '', 0, 'http://localhost:8080/?p=10', 0, 'post', '', 0),
+(10, 1, '2019-06-28 23:11:51', '2019-06-28 14:11:51', '<!-- wp:paragraph -->\n<p>南国のバナナフレーバー、たまりません</p>\n<!-- /wp:paragraph -->', 'バナナドーナツ', '', 'publish', 'open', 'open', '', '%e3%83%90%e3%83%8a%e3%83%8a%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 01:20:12', '2019-06-30 16:20:12', '', 0, 'http://localhost:8080/?p=10', 0, 'post', '', 0),
 (17, 1, '2019-06-28 23:11:51', '2019-06-28 14:11:51', '<!-- wp:paragraph -->\n<p>南国のバナナフレーバー、たまりません</p>\n<!-- /wp:paragraph -->', 'バナナドーナツ', '', 'inherit', 'closed', 'closed', '', '10-revision-v1', '', '', '2019-06-28 23:11:51', '2019-06-28 14:11:51', '', 10, 'http://localhost:8080/10-revision-v1/', 0, 'revision', '', 0),
-(18, 1, '2019-06-28 23:13:13', '2019-06-28 14:13:13', '<!-- wp:paragraph -->\n<p>カカオの<ruby>きいた<rt>・・・</rt></ruby>チョコドーナッツ</p>\n<!-- /wp:paragraph -->', 'チョコドーナツ', '', 'publish', 'open', 'open', '', '%e3%83%81%e3%83%a7%e3%82%b3%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 00:16:19', '2019-06-30 15:16:19', '', 0, 'http://localhost:8080/?p=18', 0, 'post', '', 0),
+(18, 1, '2019-06-28 23:13:13', '2019-06-28 14:13:13', '<!-- wp:paragraph -->\n<p>カカオの<ruby>きいた<rt>・・・</rt></ruby>チョコドーナッツ</p>\n<!-- /wp:paragraph -->', 'チョコドーナツ', '', 'publish', 'open', 'open', '', '%e3%83%81%e3%83%a7%e3%82%b3%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 01:19:45', '2019-06-30 16:19:45', '', 0, 'http://localhost:8080/?p=18', 0, 'post', '', 0),
 (19, 1, '2019-06-28 23:13:13', '2019-06-28 14:13:13', '<!-- wp:paragraph -->\n<p>カカオの<ruby>きいた<rt>・・・</rt></ruby>チョコドーナッツ</p>\n<!-- /wp:paragraph -->', 'チョコドーナツ', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2019-06-28 23:13:13', '2019-06-28 14:13:13', '', 18, 'http://localhost:8080/18-revision-v1/', 0, 'revision', '', 0),
-(20, 1, '2019-06-28 23:14:08', '2019-06-28 14:14:08', '<!-- wp:paragraph -->\n<p>あまおうフレーバーのいちごドーナツ</p>\n<!-- /wp:paragraph -->', 'いちごドーナツ', '', 'publish', 'open', 'open', '', '%e3%81%84%e3%81%a1%e3%81%94%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 00:16:30', '2019-06-30 15:16:30', '', 0, 'http://localhost:8080/?p=20', 0, 'post', '', 0),
+(20, 1, '2019-06-28 23:14:08', '2019-06-28 14:14:08', '<!-- wp:paragraph -->\n<p>あまおうフレーバーのいちごドーナツ</p>\n<!-- /wp:paragraph -->', 'いちごドーナツ', '', 'publish', 'open', 'open', '', '%e3%81%84%e3%81%a1%e3%81%94%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 01:18:50', '2019-06-30 16:18:50', '', 0, 'http://localhost:8080/?p=20', 0, 'post', '', 0),
 (21, 1, '2019-06-28 23:14:08', '2019-06-28 14:14:08', '<!-- wp:paragraph -->\n<p>あまおうフレーバーのいちごドーナツ</p>\n<!-- /wp:paragraph -->', 'いちごドーナツ', '', 'inherit', 'closed', 'closed', '', '20-revision-v1', '', '', '2019-06-28 23:14:08', '2019-06-28 14:14:08', '', 20, 'http://localhost:8080/20-revision-v1/', 0, 'revision', '', 0),
-(22, 1, '2019-06-28 23:15:15', '2019-06-28 14:15:15', '<!-- wp:paragraph -->\n<p>キラキラ輝きたい方に、スタードーナツ</p>\n<!-- /wp:paragraph -->', 'スタードーナツ', '', 'draft', 'open', 'open', '', '%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 00:16:43', '2019-06-30 15:16:43', '', 0, 'http://localhost:8080/?p=22', 0, 'post', '', 0),
+(22, 1, '2019-06-28 23:15:15', '2019-06-28 14:15:15', '<!-- wp:paragraph -->\n<p>キラキラ輝きたい方に、スタードーナツ</p>\n<!-- /wp:paragraph -->', 'スタードーナツ', '', 'publish', 'open', 'open', '', '%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%89%e3%83%bc%e3%83%8a%e3%83%84', '', '', '2019-07-01 00:58:17', '2019-06-30 15:58:17', '', 0, 'http://localhost:8080/?p=22', 0, 'post', '', 0),
 (23, 1, '2019-06-28 23:15:15', '2019-06-28 14:15:15', '<!-- wp:paragraph -->\n<p>キラキラ輝きたい方に、スタードーナツ</p>\n<!-- /wp:paragraph -->', 'スタードーナツ', '', 'inherit', 'closed', 'closed', '', '22-revision-v1', '', '', '2019-06-28 23:15:15', '2019-06-28 14:15:15', '', 22, 'http://localhost:8080/22-revision-v1/', 0, 'revision', '', 0),
 (24, 1, '2019-06-29 01:29:12', '2019-06-28 16:29:12', '{\n    \"custom_css[xclean]\": {\n        \"value\": \".without-sidebar .entry-thumbnail img {\\n\\ttext-align:center;\\n  width: 50%;\\n}\",\n        \"type\": \"custom_css\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-06-28 16:29:12\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'e759ce1b-0cad-41c3-93e3-cdf250b2bcae', '', '', '2019-06-29 01:29:12', '2019-06-28 16:29:12', '', 0, 'http://localhost:8080/?p=24', 0, 'customize_changeset', '', 0),
 (25, 1, '2019-06-29 01:29:12', '2019-06-28 16:29:12', '.without-sidebar .entry-thumbnail img {\n	text-align:center;\n  width: 50%;\n}\n\nh4{\n	line-height:2em;\n}\n\n.header .site-logo img{\n	margin-top:-5px;\n}', 'xclean', '', 'publish', 'closed', 'closed', '', 'xclean', '', '', '2019-07-01 00:37:50', '2019-06-30 15:37:50', '', 0, 'http://localhost:8080/xclean/', 0, 'custom_css', '', 0),
@@ -588,7 +612,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 3);
+(1, 1, 'category', '', 0, 4);
 
 -- --------------------------------------------------------
 
@@ -632,7 +656,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (18, 1, 'wp_user-settings-time', '1561730705'),
 (19, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
 (20, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:10:\"172.30.0.0\";}'),
-(21, 1, 'enable_custom_fields', ''),
+(21, 1, 'enable_custom_fields', '1'),
 (22, 1, 'closedpostboxes_post', 'a:0:{}'),
 (23, 1, 'metaboxhidden_post', 'a:0:{}');
 
