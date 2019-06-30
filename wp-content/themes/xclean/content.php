@@ -32,8 +32,29 @@
 			<h2><a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark"><?php esc_html( the_title() ); ?></a></h2>
 		<?php endif; ?>
 
-		<div class="entry-meta "><?php xclean_post_meta(); ?></div>
-	</div><!-- End .entry-description -->
+		<!-- <div class="entry-meta "><?php xclean_post_meta(); ?></div> -->
+
+		<!-- Custom Field   Price -->
+		<?php
+		  $price = get_post_meta($post->ID, 'Price', true);
+		  if($price){ ?>
+		    <h4><? echo $price . '円'; ?></h4>
+		    <?php
+		  } else {
+		    echo "No pricing";
+		} ?>
+
+		<!-- Custom Field   Allergy -->
+		<?php
+		  $allergy = get_post_meta($post->ID, 'Allergy', true);
+		  if($allergy){ ?>
+		    <h4><? echo 'アレルギー:' . $allergy ; ?></h4>
+		    <?php
+		  } else {
+		    echo "アレルギー物質なし";
+		  } ?>	
+
+	</div>
 
 	<div class="entry-content">
 		<?php
