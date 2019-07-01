@@ -9,4 +9,4 @@
 5. WordPress管理画面　→　投稿画面からカスタムフィールドを確認
 
 
-YouTube 準備中
+[YouTube](https://www.youtube.com/watch?v=GhAZD64WGEI)
